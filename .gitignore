@@ -1,0 +1,27 @@
+# Dependencies and build output
+node_modules/
+client/dist/
+dist/
+coverage/
+
+# The generated art in client/public/assets IS committed (the README shows it). npm run assets
+# rewrites it identically, so it never shows up as a change unless the art code changed.
+
+# Uploaded code and saved projects (your code and its virtual environments): never committed
+server/uploads/*
+!server/uploads/.gitkeep
+data/
+
+# Local settings, including the admin password (copy .env.example to .env)
+.env
+.env.*
+!.env.example
+
+# Python caches (samples, the harness)
+__pycache__/
+*.py[cod]
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db

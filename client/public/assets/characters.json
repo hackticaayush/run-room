@@ -1,0 +1,191 @@
+{
+  "frameWidth": 16,
+  "frameHeight": 24,
+  "columns": 6,
+  "rows": 5,
+  "sheetWidth": 96,
+  "sheetHeight": 120,
+  "rowNames": [
+    "walk_down",
+    "walk_left",
+    "walk_right",
+    "walk_up",
+    "special"
+  ],
+  "specialColumns": [
+    "typing_a",
+    "typing_b",
+    "cheer_a",
+    "cheer_b",
+    "facepalm",
+    "sleep"
+  ],
+  "anchor": {
+    "x": 0.5,
+    "y": 0.9583333333333334
+  },
+  "animations": {
+    "walk_down": {
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fps": 8,
+      "repeat": -1
+    },
+    "walk_left": {
+      "frames": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "fps": 8,
+      "repeat": -1
+    },
+    "walk_right": {
+      "frames": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "fps": 8,
+      "repeat": -1
+    },
+    "walk_up": {
+      "frames": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "fps": 8,
+      "repeat": -1
+    },
+    "idle_down": {
+      "frames": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "fps": 6,
+      "repeat": -1
+    },
+    "idle_left": {
+      "frames": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        10
+      ],
+      "fps": 6,
+      "repeat": -1
+    },
+    "idle_right": {
+      "frames": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        16
+      ],
+      "fps": 6,
+      "repeat": -1
+    },
+    "idle_up": {
+      "frames": [
+        18
+      ],
+      "fps": 1,
+      "repeat": -1
+    },
+    "typing": {
+      "frames": [
+        24,
+        25
+      ],
+      "fps": 6,
+      "repeat": -1
+    },
+    "seated": {
+      "frames": [
+        24
+      ],
+      "fps": 1,
+      "repeat": -1
+    },
+    "cheer": {
+      "frames": [
+        26,
+        27
+      ],
+      "fps": 5,
+      "repeat": -1
+    },
+    "facepalm": {
+      "frames": [
+        28
+      ],
+      "fps": 1,
+      "repeat": -1
+    },
+    "sleep": {
+      "frames": [
+        29
+      ],
+      "fps": 1,
+      "repeat": -1
+    }
+  },
+  "characters": {
+    "ghost": {
+      "image": "ghost.png",
+      "name": "GHOST",
+      "role": "HACKER"
+    },
+    "byte": {
+      "image": "byte.png",
+      "name": "BYTE",
+      "role": "ASSISTANT"
+    }
+  }
+}

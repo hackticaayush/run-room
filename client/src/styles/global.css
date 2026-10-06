@@ -1,0 +1,129 @@
+/* RUN ROOM global styles. Pixel look only: bundled bitmap fonts, square corners,
+   no native scrollbars, sprite cursors, integer scaled sprites. */
+
+:root {
+  /* One source pixel of a HUD sprite (HUD sprites render at 2x). */
+  --px: 2px;
+  --font-head: 'Press Start 2P', monospace;
+  --font-body: 'VT323', monospace;
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border-radius: 0 !important;
+  scrollbar-width: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* No double tap zoom delay on buttons; text stays its size when a phone rotates. */
+button,
+[role='button'],
+[role='tab'],
+[role='checkbox'] {
+  touch-action: manipulation;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* A scroll that runs past the end of the office never pulls to refresh or swipes back a page. */
+html,
+body {
+  overscroll-behavior: none;
+}
+
+body {
+  background: var(--c-navy);
+  color: var(--c-white);
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 1.1;
+  cursor: var(--cursor-arrow);
+  overflow: hidden;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+}
+
+img,
+canvas {
+  image-rendering: pixelated;
+}
+
+button,
+[role='button'],
+[role='tab'],
+[role='checkbox'],
+a,
+.px-clickable {
+  cursor: var(--cursor-hand);
+}
+
+input,
+textarea {
+  cursor: text;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  color: inherit;
+}
+
+::selection {
+  background: var(--c-mag-2);
+  color: var(--c-navy);
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: var(--px) solid var(--c-cyan-2);
+  outline-offset: var(--px);
+}
+
+h1,
+h2,
+h3,
+h4,
+.px-head {
+  font-family: var(--font-head);
+  font-weight: normal;
+  margin: 0;
+}
+
+a {
+  color: var(--c-cyan-2);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

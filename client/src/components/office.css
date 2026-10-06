@@ -1,0 +1,87 @@
+.office-view {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--c-outline);
+}
+
+.office-stage {
+  position: relative;
+  flex: none;
+  box-shadow: 0 0 0 var(--px) var(--c-wall-2), 0 0 0 calc(var(--px) * 2) var(--c-outline);
+}
+
+.office-canvas-host,
+.office-canvas-host canvas {
+  display: block;
+  image-rendering: pixelated;
+}
+
+/* On phones a vertical swipe over the office scrolls the page; taps still reach the agents. */
+.office-canvas-host canvas {
+  touch-action: pan-y !important;
+}
+
+.office-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Night: the game tints every sprite dark and keeps the emissive pixels (screens, neon, LEDs)
+   bright; this CSS layer adds a cool color grade and a darker edge on top. */
+.office-night {
+  background: radial-gradient(ellipse at center, rgba(42, 50, 96, 0.12) 40%, rgba(5, 7, 13, 0.45) 100%);
+  mix-blend-mode: multiply;
+}
+
+/* CRT: one scanline per source pixel row, a vignette and a slight irregular flicker. */
+.office-crt {
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(5, 7, 13, 0.3) 0,
+      rgba(5, 7, 13, 0.3) 1px,
+      transparent 1px,
+      transparent var(--zoom)
+    ),
+    radial-gradient(ellipse at center, transparent 58%, rgba(5, 7, 13, 0.6) 100%);
+  animation: crt-flicker 5.3s steps(1, end) infinite;
+}
+
+/* Below 2 CSS px per art pixel (phones) the scanlines would cover whole rows: vignette only. */
+.office-stage[data-small] .office-crt {
+  background: radial-gradient(ellipse at center, transparent 58%, rgba(5, 7, 13, 0.6) 100%);
+}
+
+@keyframes crt-flicker {
+  0% {
+    opacity: 1;
+  }
+  31% {
+    opacity: 0.93;
+  }
+  32% {
+    opacity: 1;
+  }
+  64% {
+    opacity: 0.96;
+  }
+  65% {
+    opacity: 0.9;
+  }
+  66% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .office-crt {
+    animation: none;
+  }
+}

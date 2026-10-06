@@ -1,0 +1,203 @@
+{
+  "note": "slice = 9-slice margins in source pixels (CSS border-image-slice / Phaser NineSlice)",
+  "images": {
+    "panel_frame": {
+      "image": "ui/panel_frame.png",
+      "width": 16,
+      "height": 16,
+      "slice": {
+        "top": 5,
+        "right": 5,
+        "bottom": 5,
+        "left": 5
+      }
+    },
+    "button_up": {
+      "image": "ui/button_up.png",
+      "width": 16,
+      "height": 16,
+      "slice": {
+        "top": 4,
+        "right": 4,
+        "bottom": 4,
+        "left": 4
+      }
+    },
+    "button_down": {
+      "image": "ui/button_down.png",
+      "width": 16,
+      "height": 16,
+      "slice": {
+        "top": 4,
+        "right": 4,
+        "bottom": 4,
+        "left": 4
+      }
+    },
+    "button_hover": {
+      "image": "ui/button_hover.png",
+      "width": 16,
+      "height": 16,
+      "slice": {
+        "top": 4,
+        "right": 4,
+        "bottom": 4,
+        "left": 4
+      }
+    },
+    "button_disabled": {
+      "image": "ui/button_disabled.png",
+      "width": 16,
+      "height": 16,
+      "slice": {
+        "top": 4,
+        "right": 4,
+        "bottom": 4,
+        "left": 4
+      }
+    },
+    "input_frame": {
+      "image": "ui/input_frame.png",
+      "width": 12,
+      "height": 12,
+      "slice": {
+        "top": 3,
+        "right": 3,
+        "bottom": 3,
+        "left": 3
+      }
+    },
+    "progress_bar_empty": {
+      "image": "ui/progress_bar_empty.png",
+      "width": 10,
+      "height": 10,
+      "slice": {
+        "top": 3,
+        "right": 3,
+        "bottom": 3,
+        "left": 3
+      }
+    },
+    "progress_bar_fill": {
+      "image": "ui/progress_bar_fill.png",
+      "width": 6,
+      "height": 6,
+      "slice": {
+        "top": 1,
+        "right": 1,
+        "bottom": 1,
+        "left": 1
+      }
+    },
+    "tab_active": {
+      "image": "ui/tab_active.png",
+      "width": 16,
+      "height": 16,
+      "slice": {
+        "top": 4,
+        "right": 4,
+        "bottom": 4,
+        "left": 4
+      }
+    },
+    "tab_inactive": {
+      "image": "ui/tab_inactive.png",
+      "width": 16,
+      "height": 16,
+      "slice": {
+        "top": 4,
+        "right": 4,
+        "bottom": 4,
+        "left": 4
+      }
+    },
+    "modal_frame": {
+      "image": "ui/modal_frame.png",
+      "width": 24,
+      "height": 24,
+      "slice": {
+        "top": 7,
+        "right": 7,
+        "bottom": 7,
+        "left": 7
+      }
+    },
+    "tooltip_frame": {
+      "image": "ui/tooltip_frame.png",
+      "width": 10,
+      "height": 10,
+      "slice": {
+        "top": 3,
+        "right": 3,
+        "bottom": 3,
+        "left": 3
+      }
+    },
+    "scroll_thumb": {
+      "image": "ui/scroll_thumb.png",
+      "width": 8,
+      "height": 12,
+      "slice": {
+        "top": 3,
+        "right": 3,
+        "bottom": 3,
+        "left": 3
+      }
+    },
+    "scroll_track": {
+      "image": "ui/scroll_track.png",
+      "width": 8,
+      "height": 12,
+      "slice": {
+        "top": 3,
+        "right": 3,
+        "bottom": 3,
+        "left": 3
+      }
+    },
+    "checkbox_off": {
+      "image": "ui/checkbox_off.png",
+      "width": 12,
+      "height": 12,
+      "slice": {
+        "top": 4,
+        "right": 4,
+        "bottom": 4,
+        "left": 4
+      }
+    },
+    "checkbox_on": {
+      "image": "ui/checkbox_on.png",
+      "width": 12,
+      "height": 12,
+      "slice": {
+        "top": 4,
+        "right": 4,
+        "bottom": 4,
+        "left": 4
+      }
+    },
+    "bubble_speech": {
+      "image": "ui/bubble_speech.png",
+      "width": 12,
+      "height": 12,
+      "slice": {
+        "top": 4,
+        "right": 4,
+        "bottom": 4,
+        "left": 4
+      }
+    },
+    "bubble_thought": {
+      "image": "ui/bubble_thought.png",
+      "width": 12,
+      "height": 12,
+      "slice": {
+        "top": 4,
+        "right": 4,
+        "bottom": 4,
+        "left": 4
+      }
+    }
+  }
+}
